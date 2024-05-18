@@ -3,10 +3,6 @@
 This repository contains implementations of stock forecasting models and strategies in Python. The project is organized into the following folders:
 
 1. **MonteCarlo**
-
- This repository contains implementations of stock forecasting models and strategies in Python. The project is organized into the following folders:
-
-1. **MonteCarlo**
    - `Price_Paths.ipynb`: Contains the introductory project to first calculate the daily price changes using the geometric Brownian motion formula, then compute the price at each time step based on the previous price and the corresponding daily return.
      
    - `MC_Functions.ipynb`: This folder contains a comprehensive set of Python functions to simulate stock prices and analyze their performance using Monte Carlo methods. The primary objective is to forecast future prices and evaluate    key metrics like beta, Sharpe ratio, and CAPM return. <br/>
