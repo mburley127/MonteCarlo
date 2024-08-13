@@ -16,4 +16,9 @@ This repository contains implementations of stock forecasting models and strateg
    The Monte Carlo forecast uses random sampling techniques to simulate various future scenarios based on historical data. Project followed: https://medium.com/analytics-vidhya/monte-carlo-simulations-for-predicting-stock-prices-python-a64f53585662
 
 
-3. **Least Squares Monte Carlo**
+2. **Least Squares Monte Carlo**
+   - `LSMC_OptimalExercise.ipynb`: This repository includes an implementation of the Least Squares Monte Carlo (LSMC) method, a numerical technique used to price American options. Unlike European options, which can only be exercised at maturity, American options allow for early exercise, making their valuation more complex. The LSMC model in this project simulates multiple paths of the underlying asset’s price, and determines the optimal exercise strategy. <br/>
+
+The model works by first calculating the payoff at maturity and then by using backward induction to iterate backward through each time step, performing linear regressions to estimate the continuation value (the expected value of holding the option rather than exercising it). By comparing the continuation value with the immediate exercise value at each time step, the model decides whether it’s more advantageous to exercise the option or continue holding it. <br/>
+
+Key metrics calculated include the option’s estimated price (premium), the average time of exercise across all paths, and the probability of early exercise for 100, 500, 1000, 10000, and 100000 simulations. This method provides a robust framework for analyzing American options, accounting for the flexibility of early exercise while capturing the impact of market dynamics and volatility.
